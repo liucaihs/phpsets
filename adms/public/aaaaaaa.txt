@@ -1,0 +1,5533 @@
+select * from `tb_admin` where `admin_account` = ? limit 1
+array (
+  0 => 'admin',
+)
+31.51
+update `tb_admin` set `last_login` = ? where `id` = ?
+array (
+  0 => 1500005766,
+  1 => 1,
+)
+56.3
+select `tb_permissions`.`name` from `tb_permission_role` left join `tb_permissions` on `tb_permission_role`.`permission_id` = `tb_permissions`.`id` where `tb_permissions`.`name` <> ?
+array (
+  0 => '#',
+)
+29.21
+select count(*) as aggregate from `tb_advertiser`
+array (
+)
+7.79
+select * from `tb_advertiser` order by `id` desc limit 15 offset 0
+array (
+)
+1.17
+select count(*) as aggregate from `tb_activated_ifa`
+array (
+)
+61.34
+select * from `tb_activated_ifa` order by `id` desc limit 15 offset 0
+array (
+)
+0.4
+select count(distinct raw_data) as aggregate from `tb_activated_ifa`
+array (
+)
+3.53
+select `adput_sn` from `tb_advertising` order by `create_time` desc
+array (
+)
+22.3
+select count(*) as aggregate from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ?
+array (
+  0 => 'po5966d84fd70af',
+  1 => 'po5966d84a0ca6e',
+  2 => 'po5966d845443cf',
+  3 => 'po5966d83fbf43b',
+  4 => 'po5966d83995b59',
+  5 => 'po5966d832c311d',
+  6 => 'po5966d82e49c9e',
+  7 => 'po5966d826b2a16',
+  8 => 'po5966d820de5ac',
+  9 => 'po5966d8190c8c8',
+  10 => 'po59663e93d4a5e',
+  11 => 'po59663a359dd83',
+  12 => 'po596628af2468e',
+  13 => 'po5965e21d30f40',
+  14 => 'po59635065f2048',
+  15 => 'po596318ade92ec',
+  16 => 'po595f508ab85bb',
+  17 => 'po595f0126a36d9',
+  18 => 'po595ef27e73fce',
+  19 => 'po595dfdfe91168',
+  20 => 'po595b540f8dfe7',
+  21 => 'po59531c1020e46',
+  22 => 'po595319ee7ee4c',
+  23 => 'po595319e911b0e',
+  24 => 'po595319e469d31',
+  25 => 'po595319de0e135',
+  26 => 'po595319d9171f3',
+  27 => 'po595319d4ae998',
+  28 => 'po595319cf1d2ac',
+  29 => 'po595319c7ee540',
+  30 => 'po595319c2cf26e',
+  31 => 'po5953188852a2a',
+  32 => 'po595317d551cd6',
+  33 => 'po594cdea91cab5',
+  34 => 'po594c8e6307428',
+  35 => 'po594c8cb098af6',
+  36 => 'po594b7e9cec1d3',
+  37 => 'po594b70fc5348f',
+  38 => 'po594b62402d42f',
+  39 => 'po594b3d26e1bf6',
+  40 => 'po594a18afc6130',
+  41 => 'po594a18aa48632',
+  42 => 'po594a18a502f0a',
+  43 => 'po594a189ef13c1',
+  44 => 'po594a1898cf4be',
+  45 => 'po594a189323c33',
+  46 => 'po594a188d1ebd9',
+  47 => 'po594a1887db970',
+  48 => 'po594a187f9aa7f',
+  49 => 'po594a1873bfa3a',
+  50 => 'po5949e197d8195',
+  51 => 'po5949de4213c35',
+  52 => 'po5949dcb3afbd0',
+  53 => 'po5949013625673',
+  54 => 'po5948e3a8ab1fd',
+  55 => 'po5947af763d654',
+  56 => 'po5947af707d2ac',
+  57 => 'po5947af6b73c4f',
+  58 => 'po5947af662e477',
+  59 => 'po5947af60bcd4b',
+  60 => 'po5947af5adad7e',
+  61 => 'po5947af5511894',
+  62 => 'po5947af4a13d79',
+  63 => 'po5947af3a349bd',
+  64 => 'po5947aec7894cf',
+  65 => 'po594787faaad38',
+  66 => 'po59477f61993ec',
+  67 => 'po594773e4316bc',
+  68 => 'po59473ec56696a',
+  69 => 'po5942541a65629',
+  70 => 'po594238f8eae36',
+  71 => 'po59423447ad8a9',
+  72 => 'po59422d12f0789',
+  73 => 'po59420c9d9b209',
+  74 => 'po594101424b202',
+  75 => 'po5940ee6816643',
+  76 => 'po5940dfdec0b51',
+  77 => 'po5940969491f41',
+  78 => 'po59392e2e5299c',
+  79 => '2017-07-14',
+)
+18.25
+select `adput_sn`, `click_num` as `click_nums`, `total_date` as `days` from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ? order by `total_date` desc, `adput_sn` desc
+array (
+  0 => 'po5966d84fd70af',
+  1 => 'po5966d84a0ca6e',
+  2 => 'po5966d845443cf',
+  3 => 'po5966d83fbf43b',
+  4 => 'po5966d83995b59',
+  5 => 'po5966d832c311d',
+  6 => 'po5966d82e49c9e',
+  7 => 'po5966d826b2a16',
+  8 => 'po5966d820de5ac',
+  9 => 'po5966d8190c8c8',
+  10 => 'po59663e93d4a5e',
+  11 => 'po59663a359dd83',
+  12 => 'po596628af2468e',
+  13 => 'po5965e21d30f40',
+  14 => 'po59635065f2048',
+  15 => 'po596318ade92ec',
+  16 => 'po595f508ab85bb',
+  17 => 'po595f0126a36d9',
+  18 => 'po595ef27e73fce',
+  19 => 'po595dfdfe91168',
+  20 => 'po595b540f8dfe7',
+  21 => 'po59531c1020e46',
+  22 => 'po595319ee7ee4c',
+  23 => 'po595319e911b0e',
+  24 => 'po595319e469d31',
+  25 => 'po595319de0e135',
+  26 => 'po595319d9171f3',
+  27 => 'po595319d4ae998',
+  28 => 'po595319cf1d2ac',
+  29 => 'po595319c7ee540',
+  30 => 'po595319c2cf26e',
+  31 => 'po5953188852a2a',
+  32 => 'po595317d551cd6',
+  33 => 'po594cdea91cab5',
+  34 => 'po594c8e6307428',
+  35 => 'po594c8cb098af6',
+  36 => 'po594b7e9cec1d3',
+  37 => 'po594b70fc5348f',
+  38 => 'po594b62402d42f',
+  39 => 'po594b3d26e1bf6',
+  40 => 'po594a18afc6130',
+  41 => 'po594a18aa48632',
+  42 => 'po594a18a502f0a',
+  43 => 'po594a189ef13c1',
+  44 => 'po594a1898cf4be',
+  45 => 'po594a189323c33',
+  46 => 'po594a188d1ebd9',
+  47 => 'po594a1887db970',
+  48 => 'po594a187f9aa7f',
+  49 => 'po594a1873bfa3a',
+  50 => 'po5949e197d8195',
+  51 => 'po5949de4213c35',
+  52 => 'po5949dcb3afbd0',
+  53 => 'po5949013625673',
+  54 => 'po5948e3a8ab1fd',
+  55 => 'po5947af763d654',
+  56 => 'po5947af707d2ac',
+  57 => 'po5947af6b73c4f',
+  58 => 'po5947af662e477',
+  59 => 'po5947af60bcd4b',
+  60 => 'po5947af5adad7e',
+  61 => 'po5947af5511894',
+  62 => 'po5947af4a13d79',
+  63 => 'po5947af3a349bd',
+  64 => 'po5947aec7894cf',
+  65 => 'po594787faaad38',
+  66 => 'po59477f61993ec',
+  67 => 'po594773e4316bc',
+  68 => 'po59473ec56696a',
+  69 => 'po5942541a65629',
+  70 => 'po594238f8eae36',
+  71 => 'po59423447ad8a9',
+  72 => 'po59422d12f0789',
+  73 => 'po59420c9d9b209',
+  74 => 'po594101424b202',
+  75 => 'po5940ee6816643',
+  76 => 'po5940dfdec0b51',
+  77 => 'po5940969491f41',
+  78 => 'po59392e2e5299c',
+  79 => '2017-07-14',
+)
+3.49
+select `id`, `ad_name` as `name` from `tb_advertisement`
+array (
+)
+19.14
+select `id`, `name` from `tb_media`
+array (
+)
+30.98
+select `id`, `adput_name` from `tb_advertising`
+array (
+)
+16.93
+select `adput_sn` from `tb_advertising` where `ad_id` = ? order by `create_time` desc
+array (
+  0 => '4',
+)
+3.14
+select count(*) as aggregate from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?) and `total_date` >= ?
+array (
+  0 => 'po594c8e6307428',
+  1 => 'po59473ec56696a',
+  2 => 'po5942541a65629',
+  3 => 'po594238f8eae36',
+  4 => 'po59423447ad8a9',
+  5 => 'po59422d12f0789',
+  6 => '2017-07-01',
+)
+0.78
+select `adput_sn`, `click_num` as `click_nums`, `total_date` as `days` from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?) and `total_date` >= ? order by `total_date` desc, `adput_sn` desc
+array (
+  0 => 'po594c8e6307428',
+  1 => 'po59473ec56696a',
+  2 => 'po5942541a65629',
+  3 => 'po594238f8eae36',
+  4 => 'po59423447ad8a9',
+  5 => 'po59422d12f0789',
+  6 => '2017-07-01',
+)
+0.66
+select `id`, `ad_name` as `name` from `tb_advertisement`
+array (
+)
+3.82
+select `id`, `name` from `tb_media`
+array (
+)
+2.88
+select `id`, `adput_name` from `tb_advertising`
+array (
+)
+3.85
+select `adput_sn` from `tb_advertising` where `ad_id` = ? order by `create_time` desc
+array (
+  0 => '3',
+)
+12.31
+select count(*) as aggregate from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 'po594b3d26e1bf6',
+  2 => 'po5948e3a8ab1fd',
+  3 => 'po594773e4316bc',
+  4 => 'po59420c9d9b209',
+  5 => 'po594101424b202',
+  6 => 'po5940ee6816643',
+  7 => 'po5940dfdec0b51',
+  8 => '2017-06-01',
+)
+0.68
+select `adput_sn`, `click_num` as `click_nums`, `total_date` as `days` from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ? order by `total_date` desc, `adput_sn` desc limit 15 offset 0
+array (
+  0 => 'po595f508ab85bb',
+  1 => 'po594b3d26e1bf6',
+  2 => 'po5948e3a8ab1fd',
+  3 => 'po594773e4316bc',
+  4 => 'po59420c9d9b209',
+  5 => 'po594101424b202',
+  6 => 'po5940ee6816643',
+  7 => 'po5940dfdec0b51',
+  8 => '2017-06-01',
+)
+1.87
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+1.23
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-13',
+)
+125.18
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-13',
+)
+26.58
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.61
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.65
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-12',
+)
+22.68
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-12',
+)
+24.48
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.59
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.58
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-11',
+)
+15.91
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-11',
+)
+16.79
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.58
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-11',
+)
+23.27
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-11',
+)
+24.45
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po595f508ab85bb',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => '2017-07-10',
+)
+16.38
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 0,
+  2 => '2017-07-10',
+)
+17.66
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-10',
+)
+16.19
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-10',
+)
+17.47
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.57
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-10',
+)
+31.63
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-10',
+)
+32.79
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-09',
+)
+20.13
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-09',
+)
+19.87
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.56
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.61
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-09',
+)
+33.17
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-09',
+)
+33.95
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-08',
+)
+15.71
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-08',
+)
+17.23
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-08',
+)
+31.37
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-08',
+)
+32.48
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.43
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po595f508ab85bb',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => '2017-07-07',
+)
+15.38
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 0,
+  2 => '2017-07-07',
+)
+16.89
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.56
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-07',
+)
+18.76
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-07',
+)
+17.54
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-07',
+)
+31.64
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-07',
+)
+33.84
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-06',
+)
+16.09
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-06',
+)
+17.86
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select `adput_sn`, `click_num` as `click_nums`, `total_date` as `days` from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ? order by `total_date` desc, `adput_sn` desc
+array (
+  0 => 'po595f508ab85bb',
+  1 => 'po594b3d26e1bf6',
+  2 => 'po5948e3a8ab1fd',
+  3 => 'po594773e4316bc',
+  4 => 'po59420c9d9b209',
+  5 => 'po594101424b202',
+  6 => 'po5940ee6816643',
+  7 => 'po5940dfdec0b51',
+  8 => '2017-06-01',
+)
+1.3
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.65
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-13',
+)
+23.12
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-13',
+)
+24.72
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-12',
+)
+23.35
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-12',
+)
+24.67
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.44
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.62
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-11',
+)
+16.21
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-11',
+)
+17.77
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-11',
+)
+23.82
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-11',
+)
+24.5
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po595f508ab85bb',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => '2017-07-10',
+)
+16.12
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 0,
+  2 => '2017-07-10',
+)
+17.68
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.42
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.56
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-10',
+)
+15.92
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-10',
+)
+17.6
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.52
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-10',
+)
+31.76
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-10',
+)
+32.29
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.46
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-09',
+)
+16.37
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-09',
+)
+18.12
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.57
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-09',
+)
+31.24
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-09',
+)
+32.76
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.57
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-08',
+)
+15.83
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-08',
+)
+17.33
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.62
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-08',
+)
+31.65
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-08',
+)
+32.2
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po595f508ab85bb',
+)
+0.48
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => '2017-07-07',
+)
+15.77
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 0,
+  2 => '2017-07-07',
+)
+17.1
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.48
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-07',
+)
+16.16
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-07',
+)
+17.49
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-07',
+)
+31.24
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-07',
+)
+32.75
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-06',
+)
+15.78
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-06',
+)
+17.26
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.43
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-06',
+)
+31.66
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-06',
+)
+32.59
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-05',
+)
+15.78
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-05',
+)
+17.44
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.41
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.66
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-05',
+)
+31.25
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-05',
+)
+32.66
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.41
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-04',
+)
+16.11
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-04',
+)
+17.81
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-04',
+)
+32.1
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-04',
+)
+32.94
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-03',
+)
+16.32
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-03',
+)
+18.28
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-03',
+)
+31.21
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-03',
+)
+40.16
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-02',
+)
+16.04
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-02',
+)
+17.92
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.42
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-02',
+)
+32.2
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-02',
+)
+32.65
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.55
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-01',
+)
+17.23
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-01',
+)
+17.9
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.55
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.55
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-01',
+)
+31.3
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-01',
+)
+33.56
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.44
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-30',
+)
+16.34
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-30',
+)
+18.26
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.56
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.57
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-30',
+)
+31.85
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-30',
+)
+36.09
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.62
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.58
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-29',
+)
+16.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-29',
+)
+17.77
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-29',
+)
+31.67
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-29',
+)
+32.79
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.78
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-28',
+)
+16.13
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-28',
+)
+17.49
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.43
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-28',
+)
+32.66
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-28',
+)
+33.21
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-27',
+)
+16.39
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-27',
+)
+17.28
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.56
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-27',
+)
+31.22
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-27',
+)
+32.91
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-26',
+)
+16.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-26',
+)
+17.81
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.48
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-26',
+)
+30.67
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-26',
+)
+32.23
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.48
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-25',
+)
+15.83
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-25',
+)
+16.94
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.51
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-25',
+)
+29.19
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-25',
+)
+30.97
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.51
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.63
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-24',
+)
+16.21
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-24',
+)
+18.56
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.63
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-24',
+)
+29.8
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-24',
+)
+30.64
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.52
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594b3d26e1bf6',
+)
+0.48
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => '2017-06-23',
+)
+16.62
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => 0,
+  2 => '2017-06-23',
+)
+18.06
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5948e3a8ab1fd',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5948e3a8ab1fd',
+  1 => '2017-06-23',
+)
+15.88
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5948e3a8ab1fd',
+  1 => 0,
+  2 => '2017-06-23',
+)
+17.75
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.57
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-23',
+)
+15.94
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-23',
+)
+17.19
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-23',
+)
+30.65
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-23',
+)
+31.77
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594b3d26e1bf6',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => '2017-06-22',
+)
+16.33
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => 0,
+  2 => '2017-06-22',
+)
+17.34
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.44
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-22',
+)
+15.77
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-22',
+)
+16.98
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.61
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.55
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-22',
+)
+37.92
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-22',
+)
+31.5
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.6
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-21',
+)
+16.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-21',
+)
+17.97
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.51
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-21',
+)
+27.72
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-21',
+)
+29.21
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.56
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.48
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-20',
+)
+16.4
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-20',
+)
+17.45
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-20',
+)
+27.76
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-20',
+)
+29.01
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.58
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-19',
+)
+16.3
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-19',
+)
+17.48
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-19',
+)
+25.73
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-19',
+)
+26.7
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-18',
+)
+25.01
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-18',
+)
+26.43
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.55
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-17',
+)
+25.36
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-17',
+)
+26.17
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.52
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-16',
+)
+24.97
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-16',
+)
+26.02
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.56
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po59420c9d9b209',
+)
+0.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po59420c9d9b209',
+  1 => '2017-06-15',
+)
+16.26
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po59420c9d9b209',
+  1 => 0,
+  2 => '2017-06-15',
+)
+17.76
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.78
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594101424b202',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594101424b202',
+  1 => '2017-06-15',
+)
+16.32
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594101424b202',
+  1 => 0,
+  2 => '2017-06-15',
+)
+17.69
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-15',
+)
+25.41
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-15',
+)
+27.09
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select `id`, `ad_name` as `name` from `tb_advertisement`
+array (
+)
+12.7
+select `id`, `name` from `tb_media`
+array (
+)
+12.13
+select `id`, `adput_name` from `tb_advertising`
+array (
+)
+3.06
+select `adput_sn` from `tb_advertising` where `ad_id` = ? order by `create_time` desc
+array (
+  0 => '3',
+)
+3.04
+select count(*) as aggregate from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 'po594b3d26e1bf6',
+  2 => 'po5948e3a8ab1fd',
+  3 => 'po594773e4316bc',
+  4 => 'po59420c9d9b209',
+  5 => 'po594101424b202',
+  6 => 'po5940ee6816643',
+  7 => 'po5940dfdec0b51',
+  8 => '2017-06-01',
+)
+0.84
+select `adput_sn`, `click_num` as `click_nums`, `total_date` as `days` from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ? order by `total_date` desc, `adput_sn` desc limit 15 offset 15
+array (
+  0 => 'po595f508ab85bb',
+  1 => 'po594b3d26e1bf6',
+  2 => 'po5948e3a8ab1fd',
+  3 => 'po594773e4316bc',
+  4 => 'po59420c9d9b209',
+  5 => 'po594101424b202',
+  6 => 'po5940ee6816643',
+  7 => 'po5940dfdec0b51',
+  8 => '2017-06-01',
+)
+1.1
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.58
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-06',
+)
+31.75
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-06',
+)
+33.07
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.62
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.61
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-05',
+)
+16.55
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-05',
+)
+18.22
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-05',
+)
+30.88
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-05',
+)
+32.53
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.44
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.56
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-04',
+)
+17.11
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-04',
+)
+17.9
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.46
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-04',
+)
+31.37
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-04',
+)
+32.74
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.45
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-03',
+)
+15.81
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-03',
+)
+17.93
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-03',
+)
+31.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-03',
+)
+32.75
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.63
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-02',
+)
+16.34
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-02',
+)
+17.88
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.51
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-02',
+)
+49.37
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-02',
+)
+33.62
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.65
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.58
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-01',
+)
+16.82
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-01',
+)
+18.16
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-01',
+)
+31.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-01',
+)
+32.45
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.43
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-30',
+)
+16.24
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-30',
+)
+17.91
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-30',
+)
+31.42
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-30',
+)
+32.89
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-29',
+)
+15.73
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-29',
+)
+17.87
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.48
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-29',
+)
+31.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-29',
+)
+32.77
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select `adput_sn`, `click_num` as `click_nums`, `total_date` as `days` from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ? order by `total_date` desc, `adput_sn` desc
+array (
+  0 => 'po595f508ab85bb',
+  1 => 'po594b3d26e1bf6',
+  2 => 'po5948e3a8ab1fd',
+  3 => 'po594773e4316bc',
+  4 => 'po59420c9d9b209',
+  5 => 'po594101424b202',
+  6 => 'po5940ee6816643',
+  7 => 'po5940dfdec0b51',
+  8 => '2017-06-01',
+)
+1.82
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.55
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-13',
+)
+23.44
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-13',
+)
+24.34
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-12',
+)
+23.64
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-12',
+)
+24.6
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-11',
+)
+15.61
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-11',
+)
+17.64
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-11',
+)
+23.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-11',
+)
+24.63
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.46
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po595f508ab85bb',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => '2017-07-10',
+)
+16.12
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 0,
+  2 => '2017-07-10',
+)
+17.44
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.61
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-10',
+)
+16.11
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-10',
+)
+17.09
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.42
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-10',
+)
+31.15
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-10',
+)
+32.19
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-09',
+)
+16.16
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-09',
+)
+17.56
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-09',
+)
+31.27
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-09',
+)
+32.42
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.43
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.57
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-08',
+)
+15.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-08',
+)
+17.73
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-08',
+)
+31.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-08',
+)
+32.7
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po595f508ab85bb',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => '2017-07-07',
+)
+15.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 0,
+  2 => '2017-07-07',
+)
+16.97
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.66
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.57
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-07',
+)
+16.42
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-07',
+)
+17.64
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.44
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-07',
+)
+31.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-07',
+)
+31.73
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.6
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-06',
+)
+16.08
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-06',
+)
+17.69
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-06',
+)
+31.63
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-06',
+)
+32.54
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-05',
+)
+16.06
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-05',
+)
+17.1
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.46
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-05',
+)
+31.36
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-05',
+)
+31.98
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-04',
+)
+23.61
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-04',
+)
+17.62
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.62
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-04',
+)
+31.67
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-04',
+)
+32.58
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-03',
+)
+16.26
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-03',
+)
+18.11
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.69
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-03',
+)
+31.21
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-03',
+)
+33.07
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-02',
+)
+16.63
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-02',
+)
+17.81
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.56
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-02',
+)
+36.94
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-02',
+)
+33.98
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-01',
+)
+17
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-01',
+)
+18.54
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.57
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.69
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-01',
+)
+31.99
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-01',
+)
+36.49
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.57
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.79
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-30',
+)
+17.61
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-30',
+)
+19.48
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.69
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-30',
+)
+31.82
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-30',
+)
+32.83
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.52
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-29',
+)
+16.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-29',
+)
+17.52
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-29',
+)
+31.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-29',
+)
+33.08
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.66
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-28',
+)
+16.08
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-28',
+)
+17.69
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.55
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-28',
+)
+31.58
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-28',
+)
+32.64
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.43
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.61
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-27',
+)
+16.04
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-27',
+)
+17.69
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-27',
+)
+31.32
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-27',
+)
+32.71
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-26',
+)
+16.07
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-26',
+)
+17.8
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.84
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-26',
+)
+30.19
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-26',
+)
+31.15
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.46
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-25',
+)
+16.19
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-25',
+)
+17.54
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.56
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-25',
+)
+29.71
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-25',
+)
+30.32
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-24',
+)
+16.02
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-24',
+)
+17.66
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.42
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-24',
+)
+29.23
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-24',
+)
+31.44
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594b3d26e1bf6',
+)
+0.44
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => '2017-06-23',
+)
+16.26
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => 0,
+  2 => '2017-06-23',
+)
+17.69
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5948e3a8ab1fd',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5948e3a8ab1fd',
+  1 => '2017-06-23',
+)
+15.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5948e3a8ab1fd',
+  1 => 0,
+  2 => '2017-06-23',
+)
+17.42
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.52
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-23',
+)
+15.99
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-23',
+)
+17.07
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-23',
+)
+28.82
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-23',
+)
+30.24
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.55
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594b3d26e1bf6',
+)
+0.67
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => '2017-06-22',
+)
+24.38
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => 0,
+  2 => '2017-06-22',
+)
+21.2
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-22',
+)
+15.82
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-22',
+)
+17.5
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.64
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-22',
+)
+39.24
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-22',
+)
+34.62
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.51
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-21',
+)
+16.16
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-21',
+)
+17.86
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.57
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.55
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-21',
+)
+28.21
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-21',
+)
+28.81
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.51
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.86
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-20',
+)
+15.15
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-20',
+)
+16.95
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.59
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-20',
+)
+27.73
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-20',
+)
+29.5
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-19',
+)
+16.55
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-19',
+)
+17.03
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.41
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-19',
+)
+25.39
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-19',
+)
+26.99
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.43
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-18',
+)
+25
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-18',
+)
+25.74
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-17',
+)
+25.67
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-17',
+)
+26.35
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.56
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.48
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-16',
+)
+25.09
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-16',
+)
+26.2
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po59420c9d9b209',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po59420c9d9b209',
+  1 => '2017-06-15',
+)
+15.58
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po59420c9d9b209',
+  1 => 0,
+  2 => '2017-06-15',
+)
+17.16
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594101424b202',
+)
+0.44
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594101424b202',
+  1 => '2017-06-15',
+)
+15.74
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594101424b202',
+  1 => 0,
+  2 => '2017-06-15',
+)
+17.29
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.67
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-15',
+)
+25.78
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-15',
+)
+26.96
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select `id`, `ad_name` as `name` from `tb_advertisement`
+array (
+)
+3.17
+select `id`, `name` from `tb_media`
+array (
+)
+12.66
+select `id`, `adput_name` from `tb_advertising`
+array (
+)
+11.99
+select `adput_sn` from `tb_advertising` where `ad_id` = ? order by `create_time` desc
+array (
+  0 => '3',
+)
+2.76
+select count(*) as aggregate from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 'po594b3d26e1bf6',
+  2 => 'po5948e3a8ab1fd',
+  3 => 'po594773e4316bc',
+  4 => 'po59420c9d9b209',
+  5 => 'po594101424b202',
+  6 => 'po5940ee6816643',
+  7 => 'po5940dfdec0b51',
+  8 => '2017-06-01',
+)
+1.04
+select `adput_sn`, `click_num` as `click_nums`, `total_date` as `days` from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ? order by `total_date` desc, `adput_sn` desc limit 15 offset 30
+array (
+  0 => 'po595f508ab85bb',
+  1 => 'po594b3d26e1bf6',
+  2 => 'po5948e3a8ab1fd',
+  3 => 'po594773e4316bc',
+  4 => 'po59420c9d9b209',
+  5 => 'po594101424b202',
+  6 => 'po5940ee6816643',
+  7 => 'po5940dfdec0b51',
+  8 => '2017-06-01',
+)
+0.95
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-28',
+)
+18.76
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-28',
+)
+17.54
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-28',
+)
+31.25
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-28',
+)
+32.5
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.63
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-27',
+)
+16.75
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-27',
+)
+17.57
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.46
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-27',
+)
+31.22
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-27',
+)
+32.08
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-26',
+)
+16.56
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-26',
+)
+17.7
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-26',
+)
+32.26
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-26',
+)
+31.55
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.41
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.61
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-25',
+)
+16.33
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-25',
+)
+17.4
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-25',
+)
+30.61
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-25',
+)
+31.16
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.55
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-24',
+)
+16.09
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-24',
+)
+18.04
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-24',
+)
+30.11
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-24',
+)
+30.58
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594b3d26e1bf6',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => '2017-06-23',
+)
+16.41
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => 0,
+  2 => '2017-06-23',
+)
+18.09
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.6
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5948e3a8ab1fd',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5948e3a8ab1fd',
+  1 => '2017-06-23',
+)
+15.83
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5948e3a8ab1fd',
+  1 => 0,
+  2 => '2017-06-23',
+)
+17.5
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.42
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-23',
+)
+15.93
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-23',
+)
+17.61
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.57
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-23',
+)
+29.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-23',
+)
+31.2
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594b3d26e1bf6',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => '2017-06-22',
+)
+15.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => 0,
+  2 => '2017-06-22',
+)
+16.66
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.52
+select `adput_sn`, `click_num` as `click_nums`, `total_date` as `days` from `tb_date_total` where `adput_sn` in (?, ?, ?, ?, ?, ?, ?, ?) and `total_date` >= ? order by `total_date` desc, `adput_sn` desc
+array (
+  0 => 'po595f508ab85bb',
+  1 => 'po594b3d26e1bf6',
+  2 => 'po5948e3a8ab1fd',
+  3 => 'po594773e4316bc',
+  4 => 'po59420c9d9b209',
+  5 => 'po594101424b202',
+  6 => 'po5940ee6816643',
+  7 => 'po5940dfdec0b51',
+  8 => '2017-06-01',
+)
+1.29
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-13',
+)
+22.28
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-13',
+)
+24.17
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-12',
+)
+26.15
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-12',
+)
+34.56
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.75
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.86
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-11',
+)
+29.7
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-11',
+)
+31.12
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.73
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.67
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-11',
+)
+33.81
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-11',
+)
+35.76
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po595f508ab85bb',
+)
+0.69
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => '2017-07-10',
+)
+24.21
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 0,
+  2 => '2017-07-10',
+)
+31.89
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.43
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-10',
+)
+16.73
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-10',
+)
+18.94
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.43
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.4
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-10',
+)
+31.08
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-10',
+)
+58.59
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.56
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-09',
+)
+16.36
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-09',
+)
+18.1
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.45
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-09',
+)
+31.63
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-09',
+)
+32.53
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-08',
+)
+16.04
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-08',
+)
+17.27
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.56
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-08',
+)
+32.14
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-08',
+)
+32.64
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po595f508ab85bb',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => '2017-07-07',
+)
+15.71
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po595f508ab85bb',
+  1 => 0,
+  2 => '2017-07-07',
+)
+17.18
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.52
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.6
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-07',
+)
+25.82
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-07',
+)
+27.73
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.77
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.79
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-07',
+)
+47.08
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-07',
+)
+46.09
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.61
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.87
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-06',
+)
+27.13
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-06',
+)
+26.95
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.73
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.65
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-06',
+)
+41.79
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-06',
+)
+35.62
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.68
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.83
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-05',
+)
+30.82
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-05',
+)
+26.7
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.81
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.84
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-05',
+)
+43.68
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-05',
+)
+41.38
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.68
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.83
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-04',
+)
+22.9
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-04',
+)
+29.67
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.63
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.68
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-04',
+)
+41.98
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-04',
+)
+38.26
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.56
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-03',
+)
+18.04
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-03',
+)
+18.08
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.55
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-03',
+)
+32.74
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-03',
+)
+33
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.41
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.43
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-02',
+)
+16.77
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-02',
+)
+17.63
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.45
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.41
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-02',
+)
+36.24
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-02',
+)
+33.91
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-07-01',
+)
+16.68
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-07-01',
+)
+18.32
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-07-01',
+)
+31.84
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-07-01',
+)
+33.16
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.42
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-30',
+)
+16.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-30',
+)
+17.74
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.57
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-30',
+)
+30.74
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-30',
+)
+32.25
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.43
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-29',
+)
+21.58
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-29',
+)
+27.54
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.8
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.78
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-29',
+)
+46.97
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-29',
+)
+45.35
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.66
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-28',
+)
+22.77
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-28',
+)
+30.5
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-28',
+)
+35.19
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-28',
+)
+45.66
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.55
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-27',
+)
+23.18
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-27',
+)
+18.89
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.42
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-27',
+)
+31.38
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-27',
+)
+33.93
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.45
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-26',
+)
+17.27
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-26',
+)
+17.63
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.42
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.56
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-26',
+)
+30.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-26',
+)
+31.39
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.51
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-25',
+)
+15.35
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-25',
+)
+17.6
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.45
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-25',
+)
+29.98
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-25',
+)
+30.78
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.59
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-24',
+)
+16.16
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-24',
+)
+17.51
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-24',
+)
+29.24
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-24',
+)
+30.96
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594b3d26e1bf6',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => '2017-06-23',
+)
+16.3
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => 0,
+  2 => '2017-06-23',
+)
+17.3
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.44
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5948e3a8ab1fd',
+)
+0.58
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5948e3a8ab1fd',
+  1 => '2017-06-23',
+)
+15.73
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5948e3a8ab1fd',
+  1 => 0,
+  2 => '2017-06-23',
+)
+17.01
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.58
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-23',
+)
+16
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-23',
+)
+17.12
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.71
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.42
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-23',
+)
+29.63
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-23',
+)
+30.73
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594b3d26e1bf6',
+)
+0.49
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => '2017-06-22',
+)
+15.92
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594b3d26e1bf6',
+  1 => 0,
+  2 => '2017-06-22',
+)
+17.25
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.48
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.48
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-22',
+)
+16.02
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-22',
+)
+17.27
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.55
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-22',
+)
+29.82
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-22',
+)
+30.76
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.62
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.52
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-21',
+)
+16.01
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-21',
+)
+17.67
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-21',
+)
+27.57
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-21',
+)
+28.97
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.47
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-20',
+)
+15.91
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-20',
+)
+18.12
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.51
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.61
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-20',
+)
+27.62
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-20',
+)
+28.65
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594773e4316bc',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => '2017-06-19',
+)
+16.19
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594773e4316bc',
+  1 => 0,
+  2 => '2017-06-19',
+)
+17.19
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.53
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-19',
+)
+25.16
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-19',
+)
+26.99
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.46
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-18',
+)
+24.96
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-18',
+)
+26.31
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.47
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.53
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-17',
+)
+25.33
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-17',
+)
+26.64
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.49
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-16',
+)
+25.13
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-16',
+)
+27.29
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.55
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po59420c9d9b209',
+)
+0.5
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po59420c9d9b209',
+  1 => '2017-06-15',
+)
+15.86
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po59420c9d9b209',
+  1 => 0,
+  2 => '2017-06-15',
+)
+17.04
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po594101424b202',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594101424b202',
+  1 => '2017-06-15',
+)
+15.87
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po594101424b202',
+  1 => 0,
+  2 => '2017-06-15',
+)
+17.88
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.54
+select * from `tb_advertising` where `adput_sn` = ? limit 1
+array (
+  0 => 'po5940ee6816643',
+)
+0.54
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => '2017-06-15',
+)
+25.98
+select count(distinct raw_data) as aggregate from `tb_activated_log` where `adput_sn` = ? and `clasp` = ? and FROM_UNIXTIME(create_time, '%Y-%m-%d') = ?
+array (
+  0 => 'po5940ee6816643',
+  1 => 0,
+  2 => '2017-06-15',
+)
+26.35
+select * from `tb_advertisement` where `id` = ? limit 1
+array (
+  0 => 3,
+)
+0.5
+select `id`, `ad_name` as `name` from `tb_advertisement`
+array (
+)
+12.51
+select `id`, `name` from `tb_media`
+array (
+)
+12.35
+select `id`, `adput_name` from `tb_advertising`
+array (
+)
+11.99
